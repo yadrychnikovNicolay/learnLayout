@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>page15</title>
+</head>
+<body>
+	<div class="box">I'm floating!</div>
+	<div class="box">I'm floating!</div>
+	<div class="box">I'm floating!</div>
+	<div class="box">I'm floating!</div>
+	<div class="box">I'm floating!</div>
+	<div class="box">I'm floating!</div>
+	<div class="after-box"> I'm using clear so I don't float next to the above boxes. </div>
+	<div class="box2">I'm an inline block</div>
+	<div class="box2">I'm an inline block</div>
+	<div class="box2">I'm an inline block</div>
+	<div class="box2">I'm an inline block</div>
+	<div class="box2">I'm an inline block</div>
+	<div class="box2">I'm an inline block</div>
+	<div> I don't have to use clear in this case. Nice! </div>
+
+	<!--  You have to do extra work for IE6 and IE7 support of inline-block. Sometimes people talk about inline-block triggering something called hasLayout, though you only need to know about that to support old browsers. Follow the previous link about IE6 and IE7 support if you're curious to learn more. Otherwise, let's continue.
+	-->
+
+	<style>
+		.box{
+			float: left;
+			width: 200px;
+			height: 100px;
+			margin:1em;
+		}
+
+		.after-box{
+			clear: left;
+		}
+
+		.box2{
+			display: inline-block;
+			width: 200px;
+			height: 100px;
+			margin: 1em;
+		}
+	</style>	
+</body>
+</html>

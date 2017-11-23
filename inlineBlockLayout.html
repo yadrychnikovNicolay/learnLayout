@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>page16</title>
+</head>
+<body>
+	<!--
+
+You can also use inline-block for layouts. There are a few things to keep in mind:
+
+    inline-block elements are affected by the vertical-align property, which you probably want set to top.
+    You need to set the width of each column
+    There will be a gap between the columns if there is any whitespace between them in the HTML
+
+	-->
+
+	<div class="container">
+		<nav>
+			<ul>
+				<li>Home</li>
+				<li>Taco Menu</li>
+				<li>Draft List</li>
+				<li>Hours</li>
+				<li>Directions</li>
+				<li>Contact</li>
+			</ul>
+		</nav>
+		<div class="column">
+			<section>Tada!</section>
+			<section>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+			 Quas harum, earum sed, aperiam officia explicabo natus numquam cumque
+			  libero et ut vel voluptas fugiat fuga aliquam illum recusandae consequatur
+				 quos.</section>
+		</div>
+	</div>
+
+	<style>
+		nav{
+			display: inline-block;
+			vertical-align: top;
+			width: 20%;
+		}
+
+		.column{
+			display: inline-block;
+			vertical-align: top;
+			width: 70%;
+		}
+	</style>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>page14</title>
+</head>
+<body>
+	<!--  "Responsive Design" is the strategy of making a site that "responds" to the browser and device that it is being shown on... by looking awesome no matter what. 
+	Media queries are the most powerful tool for doing this. Let's take our layout that uses percent widths and have it display in one column when the browser is too small to fit the menu in the sidebar: -->
+
+	<div class="container">
+		<nav>
+			<ul>
+				<li>Home</li>
+				<li>Taco Menu</li>
+				<li>Draft List</li>
+				<li>Hours</li>
+				<li>Directions</li>
+				<li>Contact</li>
+			</ul>
+		</nav>
+		<section> Now when you resize your browser it's even cooler than ever! </section>
+		<section>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque laborum incidunt dignissimos, non qui ducimus fugiat harum architecto laudantium magni, optio ea officia! Ullam earum, cupiditate maiores aliquam ut? Libero.</section>
+	</div>
+
+	<style>
+		@media screen and (min-width: 600px;) {
+			nav {
+				float: left;
+				width: 25%;
+			}
+			section {
+				margin-left: 25%;
+			}
+		}
+
+		@media screen and (max-width: 599px;) {
+			nav li{
+				display:inline;
+			}
+		}
+	</style>
+
+</body>
+</html>
